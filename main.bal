@@ -5,13 +5,6 @@ import ballerina/uuid;
 import ballerinax/kafka;
 import ballerinax/openai.chat;
 
-configurable string loanAPIUrl = ?;
-configurable string creditUnionAPI = ?;
-configurable string kafkaUrl = ?;
-configurable string kafkaUsername = ?;
-configurable string kafkaPassword = ?;
-configurable string openAIKey = ?;
-
 final http:Client loanClient = check new (loanAPIUrl);
 final http:Client creditUnionEp = check new (creditUnionAPI);
 final Client dbClient = check new;
