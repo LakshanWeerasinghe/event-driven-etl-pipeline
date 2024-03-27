@@ -42,6 +42,6 @@ type CreditHistory record {|
     decimal monthlyDebt;
 |};
 
-type CharGptResponse record {|
+type ChatGptResponse record {|
     float probability;
 |};

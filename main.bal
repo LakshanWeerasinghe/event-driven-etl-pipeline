@@ -89,7 +89,7 @@ function getLoanRepaymentProbability(LoanRequest loanRequest, CreditHistory cred
         if summary.choices.length() > 0 {
             string? content = summary.choices[0]?.message.content;
             if content is string {
-                CharGptResponse response = check value:fromJsonStringWithType(content);
+                ChatGptResponse response = check value:fromJsonStringWithType(content);
                 return response.probability;
             }
         }
